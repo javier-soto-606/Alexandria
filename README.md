@@ -1,7 +1,4 @@
-# Alexandria
-Repository for a archinving web of educational material
-Alexandria: Archivo Educativo para la Preservación del Conocimiento y la Colaboración Académica
-
+# Alexandria: Archivo Educativo para la Preservación del Conocimiento y la Colaboración Académica
 El proyecto "Alexandria: Archivo Educativo para la Preservación del Conocimiento y la Colaboración Académica" está dedicado a crear un archivo web que sirva para preservar, compartir y facilitar el acceso al conocimiento académico mediante un archivo digital. La plataforma permitirá que antiguos estudiantes, maestros y profesores compartan voluntariamente materiales educativos, como apuntes, asignaciones, investigaciones, presentaciones y proyectos académicos. Su propósito principal será conservar estos recursos y ponerlos a disposición de estudiantes actuales y futuros, para que puedan utilizarlos como referencias, fuentes de inspiración y herramientas complementarias para su aprendizaje.
 
 La idea de este proyecto surge de mi observación personal, ya que no he encontrado una plataforma dedicada específicamente a preservar y compartir trabajos académicos realizados por exalumnos y educadores. Tener acceso a estos trabajos podría ayudar a los estudiantes a conocer diferentes perspectivas, explorar nuevas ideas y comprender cómo otras personas han abordado tareas y proyectos similares a los suyos.
