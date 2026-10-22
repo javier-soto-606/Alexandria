@@ -1,0 +1,109 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/Library_hall_A_typeB.jpg");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 1905px 2970px;
+    color: #000f;
+}
+header {
+    background-color: #7a0006;
+    color: white;
+    text-align: center;
+}
+    header h1 {
+        display: box;
+        background-image: url("images/Forest1.jpg");
+        background-origin: border-box;
+        background-size: 100% 300px;
+        background-color: #7a0006;
+        color: white;
+        margin: 0px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+header ul {
+  list-style-type: none;
+  background-color: #7a0006;
+  margin:0px;
+  padding:0px;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+header ul li a:hover {
+  background-color:#4c0004;}
+
+main {
+    display:block;
+    background-color: #f4f4f4;
+    margin: 0px 150px;
+	padding: 15px;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  background-color: #7a0006;
+  margin:0px;
+  padding:0px;
+  text-align: center;
+  }
+#Submit-Q {
+    padding: 7px;
+    text-align: center;
+}
+#Submit-Y {
+    display: block;
+    text-align: center;
+    background-color: #7a0006;
+    color: white;
+    padding: 20px 0 20px 0;
+    font-size: 28px;
+}
+#Search-Q {
+    display: block;
+    border: 7px solid #7a0006;
+    width: 310px;
+    padding: 0px;
+    border-radius: 70px;
+}
+    #Search-Q input {
+        float: left;
+        width: 256px;
+        font-size: 26px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 100px 0px 0px 100px;
+        text-indent: 15px;
+        text-overflow:ellipsis;
+        border: none;
+    }
+    #Search-Q input:focus{
+        outline:none;
+    }
+    #Search-Q button {
+        width: 50px;
+        height: 34px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
+        border-radius:0px 100px 100px 0px;
+        cursor:pointer; 
+        border:none;
+    }
+    
+#Search-Q button:active {
+    background-color: #727272;
+}
+#Search-Q i{
+    font-size:24px;
+}
