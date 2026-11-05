@@ -5,7 +5,8 @@
     background-image: url("IMG/Boston_library_1.png");
     background-repeat: no-repeat;
     background-origin: border-box;
-    background-size:auto;
+    width: 100%;
+	height: auto;
     color: #000f;
 }
 header {
