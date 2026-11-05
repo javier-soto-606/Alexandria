@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("images/Library_hall_A_typeB.jpg");
+    background-image: url("IMG/Boston_library_1.png");
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: 1905px 2970px;
@@ -15,7 +15,7 @@ header {
 }
     header h1 {
         display: box;
-        background-image: url("images/Forest1.jpg");
+        background-image: url("IMG/Forest.jpg");
         background-origin: border-box;
         background-size: 100% 300px;
         background-color: #7a0006;
