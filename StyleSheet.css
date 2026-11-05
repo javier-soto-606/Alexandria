@@ -5,8 +5,7 @@
     background-image: url("IMG/Boston_library_1.png");
     background-repeat: no-repeat;
     background-origin: border-box;
-    width: 100%;
-	height: auto;
+    background-size: 100% 1600px;
     color: #000f;
 }
 header {
@@ -48,8 +47,7 @@ main {
     background-color: #f4f4f4;
     margin: 0px 150px;
 	padding: 15px;
-	height:1600px;
-	width: 200px;
+    height: 1200px;
 }
 
 footer {
@@ -81,6 +79,8 @@ footer {
     width: 310px;
     padding: 0px;
     border-radius: 70px;
+margin-left:auto;
+margin-right:auto;
 }
     #Search-Q input {
         float: left;
