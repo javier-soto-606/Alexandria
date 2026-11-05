@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandria — Sign in</title>
+  <link rel="stylesheet" href="StyleSheet.css">
+  <link rel="stylesheet" href="AlexandriaLibrary.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="js/supabase.js"></script>
+  <script defer src="js/auth.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Alexandria: Library of Knowledge</h1>
+    <ul>
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="Propositó.html">Objetivo</a></li>
+      <li><a href="Público.html">Front page</a></li>
+      <li><a href="Submision.html">Aportar</a></li>
+      <li><a href="Search.html">Búsqueda</a></li>
+    </ul>
+  </header>
+  <main class="library-main">
+    <section class="library-panel login-panel">
+      <h2>Sign in to Alexandria</h2>
+      <p>Sign in with an account authorized by the library administrator.</p>
+      <form id="login-form">
+        <label>Email<input id="email" type="email" autocomplete="username" required></label>
+        <label>Password<input id="password" type="password" autocomplete="current-password" required></label>
+        <button type="submit">Sign in</button>
+      </form>
+      <p id="message" class="library-message" role="status"></p>
+    </section>
+  </main>
+  <footer><p>Este proyecto fue diseñado para preservar y compartir conocimiento académico.</p></footer>
+</body>
+</html>

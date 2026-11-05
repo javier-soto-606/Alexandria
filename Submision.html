@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"/>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- temporary placeholder name -->
     <title>Alexandria</title>
     <link rel="stylesheet" href="StyleSheet.css" />
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	<script src="js/supabase.js"></script>
+	<script src="js/auth.js"></script>
+	<script src="js/upload.js"></script>
 </head>
-<body>
+<body id="submision">
     <header>
 <h1>Alexandria: Library of Knowledge</h1>
         <ul>
@@ -23,8 +27,37 @@
         </ul>
     </header>
     <main>
-        <p id="Submit-Y">Insert PDF, Zip file, presentation or digital ressearch files for donation.</p>
-        <p id="Submit-Q"><input type="file" onkeyup="Search()" placeholder="search here" title="Search" /></p>
+		<section class="library-panel">
+			<div class="library-heading-row">
+				<h2>Contribute a resource</h2>
+			</div>
+			<p>Submit educational material in PDF or ZIP format. Review the information before confirming.</p>
+			<form id="upload-form">
+				<label>
+					File (PDF or ZIP)<input id="file" type="file" accept=".pdf,.zip,application/pdf,application/zip,application/x-zip-compressed" required="" />
+				</label>
+				<label>
+					Resource name<input id="name" type="text" maxlength="180" required="" />
+				</label>
+				<label>
+					Description (max 9000 characters)<textarea id="description" rows="4" maxlength="9000"></textarea>
+				</label>
+				<label>
+					Author name<input id="author" type="text" maxlength="180" required="" />
+				</label>
+				<label>
+					Tags <span class="library-hint">(comma-separated; e.g. History, Literature, Research)</span><input id="tags" type="text"/>
+				</label>
+				<button id="review-button" type="button">Review submission</button>
+				<section id="review" class="library-review" hidden="">
+					<h3>Confirm resource details</h3>
+					<pre id="review-details"></pre>
+					<button type="submit">Confirm and upload</button>
+					<button id="edit-button" class="library-secondary" type="button">Edit details</button>
+				</section>
+			</form>
+			<p id="message" class="library-message" role="status"></p>
+		</section>
     </main>
     <footer>
         <p> Este proyecto fue diseñada con la función de proyecto final</p>

@@ -2,12 +2,38 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    color: #000f;
+}
+#Index{
     background-image: url("IMG/Boston_library_1.png");
     background-repeat: no-repeat;
     background-origin: border-box;
-    background-size: 100% 1200px;
-    color: #000f;
-}
+    background-size: 100% 1600px;
+    }
+#objetivo{
+    background-image: url("IMG/George_peabody_library.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 1600px;
+    }
+#Público{
+    background-image: url("IMG/Roman_empire_Library.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 1600px;
+    }
+#Search{
+    background-image: url("IMG/Elegant_library_hall.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 1600px;
+    }
+#submision{
+    background-image: url("IMG/Library_of_alexandria.png");
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 1600px;
+    }
 header {
     background-color: #7a0006;
     color: white;
@@ -51,14 +77,11 @@ main {
 }
 
 footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
   color: white;
   width: 100%;
   background-color: #7a0006;
-  margin:0px;
-  padding:0px;
+  margin-top: 20px;
+  padding:10px;
   text-align: center;
   }
 #Submit-Q {
@@ -76,21 +99,22 @@ footer {
 #Search-Q {
     display: block;
     border: 7px solid #7a0006;
-    width: 310px;
-    padding: 0px;
+    width: 618px;
+    padding:0px;
     border-radius: 70px;
 margin-left:auto;
 margin-right:auto;
+box-sizing: border-box;
 }
     #Search-Q input {
-        float: left;
-        width: 256px;
+        width: 550px;
         font-size: 26px;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
         border-radius: 100px 0px 0px 100px;
         text-indent: 15px;
         text-overflow:ellipsis;
         border: none;
+        
     }
     #Search-Q input:focus{
         outline:none;
@@ -108,5 +132,58 @@ margin-right:auto;
     background-color: #727272;
 }
 #Search-Q i{
-    font-size:24px;
+    font-size:26px;
+}
+
+/* Alexandria Library CSS */
+.library-main {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 72vh;
+  max-width: 1100px;
+  margin: 2rem auto 5rem;
+  padding: 1.5rem;
+}
+.library-panel {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 14px rgba(0,0,0,.10);
+}
+.login-panel { max-width: 480px; margin-top: 4rem; }
+.library-panel h2 { margin-top: 0; color: #7a0006; }
+.library-panel label { display: block; margin: 1rem 0; font-weight: 600; }
+.library-panel input, .library-panel select {
+  box-sizing: border-box; display: block; width: 100%; margin-top: .4rem;
+  padding: .75rem; border: 1px solid #bbb; border-radius: 6px; font: inherit;
+}
+#description {
+  height: 30rem;
+  resize: none;
+ box-sizing: border-box; display: block; width: 100%; margin-top: .4rem;
+  padding: .75rem; border: 1px solid #bbb; border-radius: 6px; font: inherit;
+}
+.library-panel button {
+  margin: .35rem .35rem .35rem 0; padding: .7rem 1rem; border: 0;
+  border-radius: 6px; background: #7a0006; color: white; cursor: pointer; font: inherit;
+}
+.library-panel button:disabled { opacity: .6; cursor: wait; }
+.library-panel .library-secondary { background: #555; }
+.library-heading-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.library-hint, .library-message { color: #555; font-size: .95rem; }
+.library-review { margin-top: 1rem; padding: 1rem; background: #7a0006; border: 1px solid #d8caca; border-radius: 8px; }
+.library-review pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; }
+.library-results { display: grid; gap: 1rem; margin-top: 1rem; }
+.library-file-card { padding: 1rem; border: 1px solid #ddd; border-left: 5px solid #7a0006; border-radius: 7px; background: #fff; }
+.library-file-card h3 { margin: 0 0 .5rem; color: #7a0006; }
+.library-file-card p { overflow-wrap: anywhere; }
+.library-tags { color: #7a0006; }
+@media (max-width: 700px) {
+  .library-main { margin: 1rem auto 5rem; padding: .75rem; }
+  .library-panel { padding: 1rem; }
+  .library-heading-row { align-items: flex-start; flex-direction: column; }
+  header ul { flex-wrap: wrap; }
 }
