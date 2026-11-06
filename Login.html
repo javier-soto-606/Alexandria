@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alexandria — Sign in</title>
-  <link rel="stylesheet" href="StyleSheet.css">
-  <link rel="stylesheet" href="AlexandriaLibrary.css">
+  <link rel="stylesheet" href="StyleSheet.css" />
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script defer src="js/supabase.js"></script>
-  <script defer src="js/auth.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
 </head>
-<body>
+<body id="frontdesk">
   <header>
-    <h1>Alexandria: Library of Knowledge</h1>
-    <ul>
-      <li><a href="Index.html">Inicio</a></li>
-      <li><a href="Propositó.html">Objetivo</a></li>
-      <li><a href="Público.html">Front page</a></li>
-      <li><a href="Submision.html">Aportar</a></li>
-      <li><a href="Search.html">Búsqueda</a></li>
-    </ul>
+	  <h1>Alexandria: Library of Knowledge</h1>
+	  <ul>
+		  <!-- Home page -->
+		  <li>
+			  <a href="Index.html">Inicio</a>
+		  </li>
+		  <!-- Cuál es nuestro objetivo-->
+		  <li>
+			  <a href="Propositó.html">Objetivo</a>
+		  </li>
+		  <!-- Cuál es nuestra audiencia -->
+		  <li>
+			  <a href="Público.html">Front page</a>
+		  </li>
+		  <!-- Submisión de recursos de parte del usuario-->
+		  <li>
+			  <a href="Submision.html">Aportar</a>
+		  </li>
+		  <!-- Busqueda de recursos -->
+		  <li>
+			  <a href="Search.html">Busqueda</a>
+		  </li>
+		  <!-- Pagina de login -->
+		  <li>
+			  <a href="Login.html">Login</a>
+		  </li>
+	  </ul>
   </header>
-  <main class="library-main">
+  <main>
     <section class="library-panel login-panel">
       <h2>Sign in to Alexandria</h2>
       <p>Sign in with an account authorized by the library administrator.</p>
       <form id="login-form">
-        <label>Email<input id="email" type="email" autocomplete="username" required></label>
-        <label>Password<input id="password" type="password" autocomplete="current-password" required></label>
+        <label>Email<input id="email" type="email" autocomplete="username" /></label>
+        <label>Password<input id="password" type="password" autocomplete="current-password" /></label>
         <button type="submit">Sign in</button>
       </form>
       <p id="message" class="library-message" role="status"></p>
     </section>
   </main>
-  <footer><p>Este proyecto fue diseñado para preservar y compartir conocimiento académico.</p></footer>
+  <footer><p> Este proyecto fue diseñada con la función de proyecto final</p></footer>
 </body>
 </html>
